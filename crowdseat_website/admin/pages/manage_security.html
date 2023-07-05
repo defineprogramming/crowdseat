@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Security - CrowdSeat Admin</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/security.js"></script>
+</head>
+<body>
+    <header>
+        <h1>CrowdSeat Admin - Manage Security</h1>
+    </header>
+    <main>
+        <section id="securityPanel">
+            <h2>Security Settings</h2>
+            <form id="securityForm">
+                <label for="fraudProtection">Fraud Protection Level:</label>
+                <select id="fraudProtection">
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+                <label for="dataEncryption">Data Encryption Level:</label>
+                <select id="dataEncryption">
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+                <button type="submit" onclick="ensureSecurity()">Update Security Settings</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2022 CrowdSeat. All rights reserved.</p>
+    </footer>
+</body>
+</html>

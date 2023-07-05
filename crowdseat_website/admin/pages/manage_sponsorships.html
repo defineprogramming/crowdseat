@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Sponsorships - CrowdSeat Admin</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/main.js"></script>
+    <script src="../../js/manage_sponsorships.js"></script>
+</head>
+<body>
+    <header>
+        <h1>CrowdSeat Admin - Manage Sponsorships</h1>
+    </header>
+    <main>
+        <section id="sponsorshipList">
+            <!-- Sponsorship list will be populated here by manage_sponsorships.js -->
+        </section>
+        <section id="sponsorshipUpdate">
+            <h2>Update Sponsorship</h2>
+            <form id="sponsorshipUpdateForm">
+                <label for="sponsorshipBrand">Brand:</label>
+                <input type="text" id="sponsorshipBrand" name="sponsorshipBrand" required>
+                <label for="sponsorshipEvent">Event:</label>
+                <input type="text" id="sponsorshipEvent" name="sponsorshipEvent" required>
+                <label for="sponsorshipTerms">Terms:</label>
+                <textarea id="sponsorshipTerms" name="sponsorshipTerms" required></textarea>
+                <button type="submit" onclick="updateSponsorship()">Update Sponsorship</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2022 CrowdSeat. All rights reserved.</p>
+    </footer>
+</body>
+</html>

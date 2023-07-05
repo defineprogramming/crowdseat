@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Tickets - CrowdSeat Admin</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/main.js"></script>
+    <script src="../../js/ticket_purchase.js"></script>
+</head>
+<body>
+    <header>
+        <h1>CrowdSeat Admin - Manage Tickets</h1>
+    </header>
+    <main>
+        <section id="ticketList">
+            <!-- Ticket list will be populated here by JavaScript -->
+        </section>
+        <button id="updateTicket" onclick="updateTicket()">Update Tickets</button>
+    </main>
+    <footer>
+        <p>&copy; 2022 CrowdSeat. All rights reserved.</p>
+    </footer>
+    <script>
+        // Load existing tickets
+        document.addEventListener('DOMContentLoaded', function() {
+            updateTicket();
+        });
+    </script>
+</body>
+</html>

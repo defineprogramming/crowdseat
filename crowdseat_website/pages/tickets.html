@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrowdSeat - Tickets</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/ticket_purchase.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="events.html">Events</a>
+            <a href="venues.html">Venues</a>
+            <a href="tickets.html" class="active">Tickets</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="ticketList">
+            <!-- Tickets will be dynamically loaded here by ticket_purchase.js -->
+        </section>
+
+        <button id="purchaseButton" onclick="purchaseTicket()">Purchase Ticket</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2022 CrowdSeat. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Load the tickets when the page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            updateTicket();
+        });
+    </script>
+</body>
+</html>

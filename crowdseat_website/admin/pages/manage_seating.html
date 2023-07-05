@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Seating - CrowdSeat Admin</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/backend_cms.js"></script>
+</head>
+<body>
+    <header>
+        <h1>CrowdSeat Admin - Manage Seating</h1>
+    </header>
+    <main>
+        <section id="seatingManagementPanel">
+            <h2>Seating Management</h2>
+            <div id="venueList"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2022 CrowdSeat. All rights reserved.</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            manageBackendCms('seatingManagementPanel', 'venueList');
+        });
+    </script>
+</body>
+</html>

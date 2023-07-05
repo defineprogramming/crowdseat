@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Events | CrowdSeat Admin</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/venue_management.js"></script>
+</head>
+<body>
+    <header>
+        <h1>CrowdSeat Admin: Manage Events</h1>
+    </header>
+    <main>
+        <section id="eventManagementPanel">
+            <h2>Event Management</h2>
+            <form id="eventForm">
+                <label for="eventName">Event Name:</label>
+                <input type="text" id="eventName" name="eventName" required>
+
+                <label for="eventDate">Event Date:</label>
+                <input type="date" id="eventDate" name="eventDate" required>
+
+                <label for="eventVenue">Event Venue:</label>
+                <select id="eventVenue" name="eventVenue" required></select>
+
+                <label for="eventTickets">Number of Tickets:</label>
+                <input type="number" id="eventTickets" name="eventTickets" required>
+
+                <button type="submit" onclick="updateEvent()">Update Event</button>
+            </form>
+        </section>
+        <section id="eventList">
+            <h2>Current Events</h2>
+            <ul id="currentEvents"></ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2022 CrowdSeat. All rights reserved.</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            manageEvent();
+        });
+    </script>
+</body>
+</html>

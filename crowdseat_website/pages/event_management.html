@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management | CrowdSeat</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/venue_management.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="venues.html">Venues</a>
+            <a href="events.html">Events</a>
+            <a href="tickets.html">Tickets</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main id="eventManagementPanel">
+        <h1>Event Management</h1>
+        <p>Manage your events with ease and efficiency with CrowdSeat's robust event management tools.</p>
+
+        <section>
+            <h2>Create Event</h2>
+            <form id="createEventForm">
+                <label for="eventName">Event Name:</label>
+                <input type="text" id="eventName" required>
+
+                <label for="eventDate">Event Date:</label>
+                <input type="date" id="eventDate" required>
+
+                <label for="eventVenue">Event Venue:</label>
+                <select id="eventVenue" required></select>
+
+                <button type="submit" onclick="updateEvent()">Create Event</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Manage Existing Events</h2>
+            <div id="eventList"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2022 CrowdSeat. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
